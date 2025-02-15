@@ -2,7 +2,7 @@ from socket import *
 serverName = 'localhost'
 serverPort = 8008
 clientSocket = socket(AF_INET, SOCK_STREAM)
-clientSocket.connect((serverName,serverPort)) # Connect to the server
+clientSocket.connect((serverName,serverPort))
 
 sentence = ('HELO evan')
 clientSocket.send(sentence.encode())

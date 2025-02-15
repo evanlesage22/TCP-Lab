@@ -11,7 +11,7 @@ print(f"Server listening on port {serverPort}...")
 
 while True:
     connectionSocket, addr = serverSocket.accept()
-    print(f"Connection from {addr}") # Client's IP address
+    print(f"Connection from {addr}")
 
     while True:
         data = connectionSocket.recv(1024).decode()
